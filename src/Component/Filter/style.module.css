@@ -1,0 +1,41 @@
+.container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.container:before {
+  content: "";
+}
+
+.container:after {
+  content: "";
+  position: relative;
+  right: 30px;
+  top: 16px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #d2d2d2;
+}
+
+.categorySelect {
+  appearance: none;
+  border-radius: 0px;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #d2d2d2;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.categorySelect:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 415px)  {
+  .container {
+    text-align: left;
+  }
+}
