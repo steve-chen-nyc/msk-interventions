@@ -1,6 +1,8 @@
 import { host, version } from '../constants/api';
 
 export const getInterventions = async (name) => {
+  if (!name) return {};
+
   const cachedData = localStorage.getItem(name);
 
   if (cachedData) {
